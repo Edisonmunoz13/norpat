@@ -1,0 +1,20 @@
+.title {
+  color: #fff;
+  font-family: Helvetica;
+  margin-left: 25px;
+  font-size: 22px;
+}
+
+.titleContainer {
+  background-color: #a1c7e0;
+  display: flex;
+  justify-content: center;
+}
+
+.clientsList {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

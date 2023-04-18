@@ -1,0 +1,16 @@
+.footerContainer {
+  width: 100%;
+  background-color: #231c25;
+
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1797d5;
+  font-size: 12px;
+}

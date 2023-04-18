@@ -1,0 +1,73 @@
+.proyectContainer {
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 22px;
+}
+
+.titleContainer {
+  background-color: #a1c7e0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.itemTextContainer {
+  width: 45%;
+}
+
+.subtitle {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  background-color: #04abbd;
+}
+
+.paragraph {
+  color: #006f81;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.professionalCard {
+  width: 20%;
+
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+  text-align: justify;
+  color: #006f81;
+}
+
+.professionalImage {
+  border-radius: 80px;
+  margin: 20px;
+}
+
+.name {
+  color: #1797d5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.professionalContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 60px;
+}
