@@ -3,6 +3,7 @@ import styles from "../styles/Nosotros.module.css";
 import Image from "next/image";
 
 type misionData = {
+  id: number;
   title: string;
   contain: string;
 };
@@ -16,11 +17,13 @@ type professionalProps = {
 
 const usData: misionData[] = [
   {
+    id: 1,
     title: "Misión",
     contain:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
   {
+    id: 2,
     title: "Visión",
     contain:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -62,7 +65,7 @@ const Nosotros = () => {
       </div>
       <div className={styles.textContainer}>
         {usData.map((text) => (
-          <div className={styles.itemTextContainer}>
+          <div key={text.id} className={styles.itemTextContainer}>
             <h2 className={styles.subtitle}>{text.title}</h2>
             <p className={styles.paragraph}> {text.contain}</p>
           </div>
