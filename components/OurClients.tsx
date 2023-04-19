@@ -16,17 +16,22 @@ const clients: clientProps[] = [
   { id: 5, image: "/images/logistica.png" },
 ];
 
-let size: number = window.innerWidth / 8;
+let size = 1080 / clients.length;
+
+if (typeof window !== "undefined") {
+  let size: number = window.innerWidth / 8;
+}
 
 const OurClients = () => {
   return (
     <div>
       <div className={styles.titleContainer}>
-        <h2 className={styles.title}>Clientes que confían</h2>
+        <h2 className={styles.title}>Confian en nosotros</h2>
       </div>
       <div className={styles.clientsList}>
         {clients.map((client) => (
           <Image
+            key={client.id}
             src={client.image}
             alt={`${client.id}`}
             width={size}

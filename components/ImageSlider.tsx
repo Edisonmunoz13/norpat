@@ -26,11 +26,15 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
     }
   };
 
-  const carouselWidth: number = window.innerWidth;
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const carouselWidth: number = width;
 
   useEffect(() => {
+    if (width !== carouselWidth) {
+      setWidth(window.innerWidth);
+    }
     console.log(carouselWidth);
-    //setTimeout(handleNextClick, 5000);
   });
 
   return (
