@@ -7,8 +7,7 @@ import OurClients from "../../components/OurClients";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import Proyects from "../../components/Proyects";
-
-const imageHeight: number = 250;
+import Partners from "../../components/Partners";
 
 const images: string[] = [
   "/images/1.png",
@@ -25,8 +24,8 @@ export default function Home() {
           <Image
             src="/images/norpat-ing.png"
             alt="Logo"
-            width={imageHeight}
-            height={imageHeight / 3.6}
+            width={250}
+            height={250 / 3.6}
           />
         </div>
         <div className={styles.navContainer}>
@@ -34,10 +33,13 @@ export default function Home() {
         </div>
       </div>
       <ImageSlider images={images} />
+
       <Proyects />
+      <OurClients />
       <Nosotros />
       <Proyects />
       <OurClients />
+      <Partners />
       <Contact />
       <Footer />
     </>
