@@ -59,6 +59,7 @@ const Proyects = () => {
             <h3 className={styles.subtitle}>{proyect.name}</h3>
             <Image
               className={styles.image}
+              key={proyect.id}
               src={proyect.image}
               alt="img"
               width={360}

@@ -70,6 +70,7 @@ const Nosotros = () => {
             <div className={styles.professionalCard}>
               <Image
                 className={styles.professionalImage}
+                key={professional.name}
                 src={professional.image}
                 alt="nico"
                 width={150}
