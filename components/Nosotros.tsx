@@ -8,6 +8,7 @@ type misionData = {
 };
 
 type professionalProps = {
+  id: number;
   image: string;
   name: string;
   info: string;
@@ -28,21 +29,25 @@ const usData: misionData[] = [
 
 const ourProfessionals: professionalProps[] = [
   {
+    id: 1,
     image: "/images/nico.jpg",
     name: "INGENIERO NICOLAS GORSKY",
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
   },
   {
+    id: 2,
     image: "/images/nico.jpg",
     name: "INGENIERO NICOLAS GORSKY",
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
   },
   {
+    id: 3,
     image: "/images/nico.jpg",
     name: "INGENIERO NICOLAS GORSKY",
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
   },
   {
+    id: 4,
     image: "/images/nico.jpg",
     name: "INGENIERO NICOLAS GORSKY",
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -70,7 +75,7 @@ const Nosotros = () => {
             <div className={styles.professionalCard}>
               <Image
                 className={styles.professionalImage}
-                key={professional.name}
+                key={professional.id}
                 src={professional.image}
                 alt="nico"
                 width={150}
