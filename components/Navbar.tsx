@@ -33,10 +33,8 @@ const Navbar = () => {
   return (
     <div className={styles.nav}>
       {sections.map((x) => (
-        <div>
-          <h3 key={x.id} className={styles.section}>
-            {x.name}
-          </h3>
+        <div key={x.id}>
+          <h3 className={styles.section}>{x.name}</h3>
         </div>
       ))}
     </div>
