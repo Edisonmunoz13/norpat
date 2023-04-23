@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Navbar.module.css";
+import Image from "next/image";
 
 type section = {
   id: number;
@@ -13,15 +14,15 @@ const sections: section[] = [
   },
   {
     id: 2,
-    name: "Nuestros Clientes",
-  },
-  {
-    id: 3,
     name: "Proyectos",
   },
   {
+    id: 3,
+    name: "Preguntas frecuentes",
+  },
+  {
     id: 4,
-    name: "Preguntas Frecuentes",
+    name: "Nuestros clientes",
   },
   {
     id: 5,
@@ -31,12 +32,25 @@ const sections: section[] = [
 
 const Navbar = () => {
   return (
-    <div className={styles.nav}>
-      {sections.map((x) => (
-        <div key={x.id}>
-          <h3 className={styles.section}>{x.name}</h3>
+    <div className={styles.headlineContainer}>
+      <div className={styles.navContainer}>
+        <div className={styles.mainLogo}>
+          <Image
+            className={styles.image}
+            src="/images/norpat-ing.png"
+            alt="Logo"
+            width={150}
+            height={150 / 3.6}
+          />
         </div>
-      ))}
+        <div className={styles.nav}>
+          {sections.map((x) => (
+            <div key={x.id}>
+              <h3 className={styles.section}>{x.name}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

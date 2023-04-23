@@ -20,6 +20,7 @@ const Footer = () => {
 
       <div>
         <Image
+          className={styles.redesImage}
           src={"/images/redesOrange.png"}
           alt="redes"
           width={119}

@@ -9,6 +9,8 @@ type proyect = {
   description: string;
 };
 
+const width: number = 360;
+
 const proyects: proyect[] = [
   {
     id: 1,
@@ -45,6 +47,13 @@ const proyects: proyect[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
+  {
+    id: 5,
+    name: "Lorem ipsum",
+    image: "/images/5.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
 ];
 
 const Proyects = () => {
@@ -61,8 +70,8 @@ const Proyects = () => {
               className={styles.image}
               src={proyect.image}
               alt="img"
-              width={360}
-              height={360 / 2.5}
+              width={width}
+              height={width / 2.5}
             />
             <p className={styles.proyectDescription}>{proyect.description}</p>
           </div>
