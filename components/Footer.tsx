@@ -15,7 +15,7 @@ const Footer = () => {
       <h2 className={styles.footerText}>
         DIRECCION: Algún lugar en parque industrial de General Roca
         <br /> MAil: norpat@norpat.com.ar
-        <br /> TEL: +542984000000
+        <br /> TEL: +54298400000
       </h2>
 
       <div>
