@@ -2,6 +2,28 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/OurClients.module.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 interface clientProps {
   id: number;
@@ -26,18 +48,40 @@ const OurClients = () => {
   return (
     <div>
       <div className={styles.titleContainer}>
-        <h2 className={styles.title}>Confian en nosotros</h2>
+        <h2 className={styles.title}>
+          Clientes que <br></br>Confian en nosotros
+        </h2>
       </div>
-      <div className={styles.clientsList}>
-        {clients.map((client) => (
-          <Image
-            key={client.id}
-            src={client.image}
-            alt={`${client.id}`}
-            width={size}
-            height={size / 1.35}
-          />
-        ))}
+      <div className={styles.carouselContainer}>
+        <Carousel
+          className={styles.clientsList}
+          swipeable={true}
+          draggable={true}
+          showDots={false}
+          responsive={responsive}
+          ssr={false} // means to render carousel on server-side.
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          {clients.map((client) => (
+            <Image
+              className={styles.logoItem}
+              key={client.id}
+              src={client.image}
+              alt={`${client.id}`}
+              width={100}
+              height={135}
+            />
+          ))}
+        </Carousel>
+        ;
       </div>
     </div>
   );

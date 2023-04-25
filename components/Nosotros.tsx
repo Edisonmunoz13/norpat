@@ -15,6 +15,10 @@ type professionalProps = {
   image: string;
   name: string;
   info: string;
+  expert: string;
+  experiencie: string;
+  professional: string;
+  matrícula: string;
 };
 
 const usData: misionData[] = [
@@ -48,20 +52,33 @@ const ourProfessionals: professionalProps[] = [
   {
     id: 1,
     image: "/images/nico.jpg",
-    name: "Ing:Nicolas Pedro Gorsky",
-    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    name: "Nicolas Gorsky",
+    info: "Ingeniero Mecánico Electricista",
+    expert: "Experto Universitario en Diseño de Plantas Fotovoltáicas",
+    experiencie: "6 años de experiencia en energías renovables",
+    professional: "Profesional Habilitado Generación Distribuida",
+    matrícula: "Matrícula CPIT A-4765-2",
   },
   {
     id: 2,
     image: "/images/nico.jpg",
-    name: "Ing:Nicolas Pedro Gorsky",
-    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    name: "Mateo Gadano",
+    info: "Ingeniero Ambiental",
+    expert: "Experto Universitario en Diseño de Plantas Fotovoltáicas",
+    experiencie:
+      "Diplomado en finanzas para las Energías Renovables, Postgrado en Energías Renovables",
+    professional: "Profesional Habilitado Generación Distribuida",
+    matrícula: "Matrícula CPIT A-4855-2",
   },
   {
     id: 3,
     image: "/images/nico.jpg",
-    name: "Ing:Nicolas Pedro Gorsky",
-    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    name: "Gastón Gagliardi",
+    info: "Ingeniero Mecánico",
+    expert: "Certificado en administración de Proyectos",
+    experiencie: "Certificado en Seguridad de Izajes",
+    professional: "Profesional Habilitado Generació Distribuida",
+    matrícula: "Matrícula CPIT A-4855-2",
   },
 ];
 
@@ -88,8 +105,8 @@ const Nosotros = () => {
                       className={styles.solarIcon}
                       src={icon.image}
                       alt={`${icon.id}`}
-                      width={100}
-                      height={100}
+                      width={80}
+                      height={80}
                     />
                   ))}
                 </div>
@@ -115,7 +132,10 @@ const Nosotros = () => {
                   height={150}
                 />
                 <h3 className={styles.name}>{professional.name}</h3>
-                <p className={styles.info}>{professional.info}</p>
+                <p className={styles.info}>- {professional.info}</p>
+                <p className={styles.info}>- {professional.expert}</p>
+                <p className={styles.info}>- {professional.experiencie}</p>
+                <p className={styles.info}>- {professional.matrícula}</p>
               </div>
             ))}
           </div>
