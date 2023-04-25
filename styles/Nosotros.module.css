@@ -3,71 +3,84 @@
 }
 
 .title {
-  color: #fff;
+  color: #1797d5;
   font-family: Helvetica;
-  font-size: 22px;
+  margin-left: 19%;
+  font-size: 33px;
+  font-weight: 500;
 }
 
 .titleContainer {
-  background-color: #a1c7e0;
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
+}
+
+.misionContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.solarIcon {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .textContainer {
+  padding-top: 30px;
   display: flex;
+  width: 62%;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.itemTextContainer {
-  width: 45%;
+  text-align: center;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-color: #fff;
 }
 
 .subtitle {
-  color: #fff;
+  width: 60%;
+  color: #f39453;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  background-color: #04abbd;
-}
-
-.paragraph {
-  color: #006f81;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify;
+  font-size: 25;
+  margin: auto;
+  font-weight: 400;
 }
 
 .professionalCard {
   width: 20%;
-
   justify-content: center;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 .info {
-  text-align: justify;
-  color: #006f81;
+  text-align: left;
+  color: #a1c7e0;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .professionalImage {
   border-radius: 80px;
-  margin: 20px;
 }
 
 .name {
-  color: #1797d5;
+  color: #f39453;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .professionalContainer {
-  width: 100%;
+  margin-left: 9%;
+  margin-right: 9%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 60px;
 }

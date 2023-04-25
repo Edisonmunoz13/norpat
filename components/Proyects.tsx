@@ -6,44 +6,67 @@ type proyect = {
   id: number;
   name: string;
   image: string;
+  paneles: string;
+  potencia: string;
   description: string;
 };
+
+const width: number = 360;
 
 const proyects: proyect[] = [
   {
     id: 1,
     name: "Lorem ipsum",
     image: "/images/1.png",
+    paneles: "Instalación de 2000 paneles solares",
+    potencia: "3000 KWh/día",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Instalación de características similares más grande de Argentina",
   },
   {
     id: 2,
     name: "Lorem ipsum",
     image: "/images/2.png",
+    paneles: "Instalación de 2000 paneles solares",
+    potencia: "3000 KWh/día",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Instalación de características similares más grande de Argentina",
   },
   {
     id: 3,
     name: "Lorem ipsum",
     image: "/images/3.png",
+    paneles: "Instalación de 2000 paneles solares",
+    potencia: "3000 KWh/día",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Instalación de características similares más grande de Argentina",
   },
   {
     id: 4,
     name: "Lorem ipsum",
     image: "/images/4.png",
+    paneles: "Instalación de 2000 paneles solares",
+    potencia: "Potencia de más de 3000 KWh/día",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Instalación de características similares más grande de Argentina",
   },
   {
     id: 5,
     name: "Lorem ipsum",
     image: "/images/5.png",
+    paneles: "Instalación de 2000 paneles solares",
+    potencia: "Potencia de más de 3000 KWh/día",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Instalación de características similares más grande de Argentina",
+  },
+  {
+    id: 6,
+    name: "Lorem ipsum",
+    image: "/images/5.png",
+    paneles: "Instalación de 2000 paneles solares",
+    potencia: "Pontecia de más 3000 KWh/día",
+    description:
+      "Instalación de características similares más grande de Argentina",
   },
 ];
 
@@ -61,10 +84,12 @@ const Proyects = () => {
               className={styles.image}
               src={proyect.image}
               alt="img"
-              width={360}
-              height={360 / 2.5}
+              width={width}
+              height={width / 2.5}
             />
-            <p className={styles.proyectDescription}>{proyect.description}</p>
+            <p className={styles.proyectDescription}>- {proyect.paneles}</p>
+            <p className={styles.proyectDescription}>- {proyect.potencia}</p>
+            <p className={styles.proyectDescription}>- {proyect.description}</p>
           </div>
         ))}
       </div>

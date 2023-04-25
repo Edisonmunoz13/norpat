@@ -27,7 +27,7 @@ function Contact() {
     if (response.ok) {
       // Redirigir al usuario a la página de confirmación o mostrar mensaje de éxito
     } else {
-      // Mostrar mensaje de error al usuariooo
+      // Mostrar mensaje de error al usuarioo
     }
   };
 
