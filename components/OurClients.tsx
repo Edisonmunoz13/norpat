@@ -76,8 +76,8 @@ const OurClients = () => {
               key={client.id}
               src={client.image}
               alt={`${client.id}`}
-              width={100}
-              height={135}
+              width={150}
+              height={150}
             />
           ))}
         </Carousel>

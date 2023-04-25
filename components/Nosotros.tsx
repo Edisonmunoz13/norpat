@@ -102,6 +102,7 @@ const Nosotros = () => {
                 <div className={styles.solarIcons}>
                   {text.icons.map((icon) => (
                     <Image
+                      key={icon.id}
                       className={styles.solarIcon}
                       src={icon.image}
                       alt={`${icon.id}`}
