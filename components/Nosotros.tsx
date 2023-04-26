@@ -123,10 +123,9 @@ const Nosotros = () => {
         <div className={styles.professionalContainer}>
           <div className={styles.professionalContainer}>
             {ourProfessionals.map((professional) => (
-              <div className={styles.professionalCard}>
+              <div key={professional.id} className={styles.professionalCard}>
                 <Image
                   className={styles.professionalImage}
-                  key={professional.id}
                   src={professional.image}
                   alt="nico"
                   width={150}
