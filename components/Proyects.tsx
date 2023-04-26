@@ -22,7 +22,7 @@ const proyects: proyect[] = [
     id: 1,
     name: "PROYECT IPSUM",
     image: "/images/1.jpg",
-    paneles: "2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "3000 KWh/día",
     description:
       "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
@@ -31,7 +31,7 @@ const proyects: proyect[] = [
     id: 2,
     name: "PROYECT IPSUM",
     image: "/images/2.jpg",
-    paneles: "2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "3000 KWh/día",
     description:
       "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
@@ -40,7 +40,7 @@ const proyects: proyect[] = [
     id: 3,
     name: "PROYECT IPSUM",
     image: "/images/3.jpg",
-    paneles: "2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "3000 KWh/día",
     description:
       "Instalación de características similares más grande de ArgentinaLorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
@@ -49,7 +49,7 @@ const proyects: proyect[] = [
     id: 4,
     name: "PROYECT IPSUM",
     image: "/images/4.jpg",
-    paneles: "2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "Potencia de más de 3000 KWh/día",
     description:
       "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
@@ -58,7 +58,7 @@ const proyects: proyect[] = [
     id: 5,
     name: "PROYECT IPSUM",
     image: "/images/5.jpg",
-    paneles: "2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "Potencia de más de 3000 KWh/día",
     description:
       "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
@@ -67,7 +67,7 @@ const proyects: proyect[] = [
     id: 6,
     name: "PROYECT IPSUM",
     image: "/images/5.jpg",
-    paneles: "2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "Pontecia de más 3000 KWh/día",
     description:
       "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -128,8 +128,9 @@ const Proyects = () => {
                 />
                 <h3 className={styles.subtitle}>{proyect.name}</h3>
                 <div className={styles.proyectDescription}>
-                  <h3 className={styles.proyectSubt}>{proyect.paneles}</h3>
-                  <h3 className={styles.proyectSubt}>{proyect.potencia}</h3>
+                  <h4 className={styles.proyectSubt}>
+                    {proyect.paneles} <br /> <br /> {proyect.potencia}
+                  </h4>
                   <p>{proyect.description}</p>
                 </div>
               </div>
