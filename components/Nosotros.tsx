@@ -51,8 +51,8 @@ const usData: misionData[] = [
 const ourProfessionals: professionalProps[] = [
   {
     id: 1,
-    image: "/images/nico.jpg",
-    name: "Nicolas Gorsky",
+    image: "/images/ing.jpg",
+    name: "NICOLAS GORSKY",
     info: "Ingeniero Mecánico Electricista",
     expert: "Experto Universitario en Diseño de Plantas Fotovoltáicas",
     experiencie: "6 años de experiencia en energías renovables",
@@ -61,23 +61,22 @@ const ourProfessionals: professionalProps[] = [
   },
   {
     id: 2,
-    image: "/images/nico.jpg",
-    name: "Mateo Gadano",
+    image: "/images/ing.jpg",
+    name: "MATEO GADANO",
     info: "Ingeniero Ambiental",
     expert: "Experto Universitario en Diseño de Plantas Fotovoltáicas",
-    experiencie:
-      "Diplomado en finanzas para las Energías Renovables, Postgrado en Energías Renovables",
+    experiencie: `Diplomado en finanzas para las Energías Renovables`,
     professional: "Profesional Habilitado Generación Distribuida",
     matrícula: "Matrícula CPIT A-4855-2",
   },
   {
     id: 3,
-    image: "/images/nico.jpg",
-    name: "Gastón Gagliardi",
+    image: "/images/ing.jpg",
+    name: "GASTON GAGLIARDI",
     info: "Ingeniero Mecánico",
     expert: "Certificado en administración de Proyectos",
     experiencie: "Certificado en Seguridad de Izajes",
-    professional: "Profesional Habilitado Generació Distribuida",
+    professional: "Profesional Habilitado Generación Distribuida",
     matrícula: "Matrícula CPIT A-4855-2",
   },
 ];
@@ -120,7 +119,7 @@ const Nosotros = () => {
             Nuestro <br></br> equipo de Profesionales
           </h2>
         </div>
-        <div className={styles.professionalContainer}>
+        <div className={styles.containerContainer}>
           <div className={styles.professionalContainer}>
             {ourProfessionals.map((professional) => (
               <div key={professional.id} className={styles.professionalCard}>
@@ -128,14 +127,39 @@ const Nosotros = () => {
                   className={styles.professionalImage}
                   src={professional.image}
                   alt="nico"
-                  width={150}
-                  height={150}
+                  width={250}
+                  height={200}
                 />
                 <h3 className={styles.name}>{professional.name}</h3>
-                <p className={styles.info}>- {professional.info}</p>
-                <p className={styles.info}>- {professional.expert}</p>
-                <p className={styles.info}>- {professional.experiencie}</p>
-                <p className={styles.info}>- {professional.matrícula}</p>
+                <h4 className={styles.position}> {professional.info} </h4>
+                <p className={styles.info}>
+                  {professional.expert} <br />
+                  {professional.experiencie} <br />
+                  {professional.matrícula}
+                </p>
+                <div className={styles.netContact}>
+                  <Image
+                    className={styles.netIcon}
+                    src={"/images/face.png"}
+                    alt="face"
+                    width={20}
+                    height={20}
+                  />
+                  <Image
+                    className={styles.netIcon}
+                    src={"/images/in.png"}
+                    alt="in"
+                    width={20}
+                    height={20}
+                  />
+                  <Image
+                    className={styles.netIcon}
+                    src={"/images/ig.png"}
+                    alt="ig"
+                    width={20}
+                    height={20}
+                  />
+                </div>
               </div>
             ))}
           </div>

@@ -11,11 +11,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 26%;
-  padding: 20px;
+  width: 90%;
+  margin: auto;
   margin-bottom: 20px;
+  background-color: #fff;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .proyectCard:hover {
@@ -28,27 +29,34 @@
   font-family: Helvetica;
   font-size: 16px;
   color: #f39453;
+  margin-left: 10px;
+}
+
+.containerContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 .proyectsContainer {
-  margin-left: 19%;
-  margin-right: 19%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 10px;
 }
 
 .image {
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
   height: auto;
 }
 
 .proyectDescription {
   font-family: Arial, Helvetica, sans-serif;
-  color: #a1c7e0;
+  color: #1797d5;
   text-align: justify;
-  width: 100%;
+  width: 80%;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
 }
