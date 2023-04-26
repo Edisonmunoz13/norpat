@@ -19,7 +19,7 @@ const carouselImages: carouselImageProps[] = [
     image: "/images/Slider4.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
-      "/images/panel.png",
+      "/images/panel1.png",
     ],
     styles: ["leyend1", "icon1"],
   },
@@ -27,17 +27,17 @@ const carouselImages: carouselImageProps[] = [
     id: 2,
     image: "/images/Slider2.png",
     leyend: [
-      "Disminución en las emisiones de CO2 en 10 millones de mtrs3",
+      "Disminución en las emisiones de CO2 en 10 millones de mtrs3, (editar no se de que manera se nota eso)",
       "/images/co2.png",
     ],
     styles: ["leyend2", "icon2"],
   },
   {
     id: 3,
-    image: "/images/Slider4.png",
+    image: "/images/Slider3.0.png",
     leyend: [
-      "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
-      "/images/panel.png",
+      "Cantidad total de KWt generados: 400.000, producción mensual aproximada de: 10.000 (editar también)",
+      "/images/production.png",
     ],
     styles: ["leyend3", "icon3"],
   },
@@ -100,8 +100,8 @@ const SliderCarousel = () => {
                 className={styles.leyendIcon}
                 src={image.leyend[1]}
                 alt={`${image.id + 3}`}
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
             </div>
           </div>
