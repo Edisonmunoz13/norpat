@@ -16,10 +16,10 @@ type carouselImageProps = {
 const carouselImages: carouselImageProps[] = [
   {
     id: 1,
-    image: "/images/Slider4.png",
+    image: "/images/slid112.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
-      "/images/panel1.png",
+      "/images/panelorange.png",
     ],
     styles: ["leyend1", "icon1"],
   },
@@ -100,8 +100,8 @@ const SliderCarousel = () => {
                 className={styles.leyendIcon}
                 src={image.leyend[1]}
                 alt={`${image.id + 3}`}
-                width={80}
-                height={80}
+                width={100}
+                height={100}
               />
             </div>
           </div>

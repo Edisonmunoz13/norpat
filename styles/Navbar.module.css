@@ -20,6 +20,7 @@
 
 .image {
   padding-right: 90px;
+  cursor: pointer;
 }
 
 .navContainer {

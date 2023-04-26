@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
@@ -18,11 +19,11 @@ const sections: section[] = [
   },
   {
     id: 3,
-    name: "Preguntas frecuentes",
+    name: "Nuestros clientes",
   },
   {
     id: 4,
-    name: "Nuestros clientes",
+    name: "Preguntas frecuentes",
   },
   {
     id: 5,
@@ -31,6 +32,10 @@ const sections: section[] = [
 ];
 
 const Navbar = () => {
+  const handleClick = () => {
+    window.location.reload();
+  };
+
   return (
     <div className={styles.headlineContainer}>
       <div className={styles.navContainer}>
@@ -41,6 +46,7 @@ const Navbar = () => {
             alt="Logo"
             width={150}
             height={150 / 3.6}
+            onClick={handleClick}
           />
         </div>
         <div className={styles.nav}>
