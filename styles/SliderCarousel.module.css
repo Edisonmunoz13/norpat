@@ -12,11 +12,11 @@
 
 .leyendContainer {
   position: relative;
-  background-color: #fff;
-  margin-top: -180px;
-  margin-bottom: 10px;
+  background-color: transparent;
+  margin-top: -200px;
+  margin-bottom: 30px;
   margin-left: 60%;
-  margin-right: 4%;
+  margin-right: 2%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,9 +29,9 @@
 
 .carouselLeyend {
   font-family: Helvetica;
-  color: #1797d5;
+  color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
 }
 
