@@ -92,6 +92,7 @@ const SliderCarousel = () => {
               alt={`${image.id}`}
               width={1920}
               height={500}
+              loading="eager"
             />
             <div className={styles.leyendContainer}>
               <h2 className={styles.carouselLeyend}>{image.leyend[0]}</h2>
