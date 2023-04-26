@@ -16,7 +16,7 @@ type carouselImageProps = {
 const carouselImages: carouselImageProps[] = [
   {
     id: 1,
-    image: "/images/Slider1.png",
+    image: "/images/Slider4.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
       "/images/panel.png",
