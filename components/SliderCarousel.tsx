@@ -5,10 +5,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../styles/SliderCarousel.module.css";
 import Image from "next/image";
-import getConfig from "next/config";
-
-const { publicRuntimeConfig } = getConfig();
-const publicPath = publicRuntimeConfig.publicPath || "";
 
 type carouselImageProps = {
   id: number;
@@ -20,7 +16,7 @@ type carouselImageProps = {
 const carouselImages: carouselImageProps[] = [
   {
     id: 1,
-    image: `${publicPath}/images/slider1.png`,
+    image: "/images/slider1.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
       "/images/panel.png",
@@ -29,7 +25,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 2,
-    image: `${publicPath}/images/slider2.png`,
+    image: "/images/slider2.png",
     leyend: [
       "Disminución en las emisiones de CO2 en 10 millones de mtrs3",
       "/images/co2.png",
@@ -38,7 +34,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 3,
-    image: `${publicPath}/images/slider3.png`,
+    image: "/images/slider3.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
       "/images/panel.png",
