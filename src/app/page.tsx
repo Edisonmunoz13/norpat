@@ -19,8 +19,8 @@ export default function Home() {
       <SliderCarousel />
       <Nosotros />
       <Proyects />
-      <Faq />
       <OurClients />
+      <Faq />
       <Partners />
       <Contact />
       <Footer />

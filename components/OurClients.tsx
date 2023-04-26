@@ -46,12 +46,13 @@ if (typeof window !== "undefined") {
 
 const OurClients = () => {
   return (
-    <div>
+    <div className={styles.containerContainer}>
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>
           Clientes que <br></br>Confian en nosotros
         </h2>
       </div>
+      <div className={styles.line}></div>
       <div className={styles.carouselContainer}>
         <Carousel
           className={styles.clientsList}
@@ -83,6 +84,7 @@ const OurClients = () => {
         </Carousel>
         ;
       </div>
+      <div className={styles.line}></div>
     </div>
   );
 };

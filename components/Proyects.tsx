@@ -20,57 +20,57 @@ const width: number = 360;
 const proyects: proyect[] = [
   {
     id: 1,
-    name: "Lorem ipsum",
+    name: "PROYECT IPSUM",
     image: "/images/1.jpg",
-    paneles: "Instalación de 2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "3000 KWh/día",
     description:
-      "Instalación de características similares más grande de Argentina",
+      "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
     id: 2,
-    name: "Lorem ipsum",
+    name: "PROYECT IPSUM",
     image: "/images/2.jpg",
-    paneles: "Instalación de 2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "3000 KWh/día",
     description:
-      "Instalación de características similares más grande de Argentina",
+      "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
     id: 3,
-    name: "Lorem ipsum",
+    name: "PROYECT IPSUM",
     image: "/images/3.jpg",
-    paneles: "Instalación de 2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "3000 KWh/día",
     description:
-      "Instalación de características similares más grande de Argentina",
+      "Instalación de características similares más grande de ArgentinaLorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
   },
   {
     id: 4,
-    name: "Lorem ipsum",
+    name: "PROYECT IPSUM",
     image: "/images/4.jpg",
-    paneles: "Instalación de 2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "Potencia de más de 3000 KWh/día",
     description:
-      "Instalación de características similares más grande de Argentina",
+      "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
     id: 5,
-    name: "Lorem ipsum",
+    name: "PROYECT IPSUM",
     image: "/images/5.jpg",
-    paneles: "Instalación de 2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "Potencia de más de 3000 KWh/día",
     description:
-      "Instalación de características similares más grande de Argentina",
+      "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
     id: 6,
-    name: "Lorem ipsum",
+    name: "PROYECT IPSUM",
     image: "/images/5.jpg",
-    paneles: "Instalación de 2000 paneles solares",
+    paneles: "2000 Paneles Solares",
     potencia: "Pontecia de más 3000 KWh/día",
     description:
-      "Instalación de características similares más grande de Argentina",
+      "Instalación de características similares más grande de Argentina Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
   },
 ];
 
@@ -78,11 +78,11 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 3,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 3,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -104,7 +104,7 @@ const Proyects = () => {
         <div className={styles.proyectsContainer}>
           <Carousel
             swipeable={false}
-            showDots={true}
+            showDots={false}
             responsive={responsive}
             ssr={false} // means to render carousel on server-side.
             infinite={true}
@@ -128,9 +128,10 @@ const Proyects = () => {
                 />
                 <h3 className={styles.subtitle}>{proyect.name}</h3>
                 <div className={styles.proyectDescription}>
-                  <p>- {proyect.paneles}</p>
-                  <p>- {proyect.potencia}</p>
-                  <p>- {proyect.description}</p>
+                  <h4 className={styles.proyectSubt}>
+                    {proyect.paneles} <br /> <br /> {proyect.potencia}
+                  </h4>
+                  <p>{proyect.description}</p>
                 </div>
               </div>
             ))}
