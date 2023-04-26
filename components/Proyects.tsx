@@ -17,7 +17,7 @@ const proyects: proyect[] = [
   {
     id: 1,
     name: "Lorem ipsum",
-    image: "/images/slider4.png",
+    image: "/images/1.jpg",
     paneles: "Instalación de 2000 paneles solares",
     potencia: "3000 KWh/día",
     description:
@@ -26,7 +26,7 @@ const proyects: proyect[] = [
   {
     id: 2,
     name: "Lorem ipsum",
-    image: "/images/2.png",
+    image: "/images/2.jpg",
     paneles: "Instalación de 2000 paneles solares",
     potencia: "3000 KWh/día",
     description:
@@ -35,7 +35,7 @@ const proyects: proyect[] = [
   {
     id: 3,
     name: "Lorem ipsum",
-    image: "/images/3.png",
+    image: "/images/3.jpg",
     paneles: "Instalación de 2000 paneles solares",
     potencia: "3000 KWh/día",
     description:
@@ -44,7 +44,7 @@ const proyects: proyect[] = [
   {
     id: 4,
     name: "Lorem ipsum",
-    image: "/images/4.png",
+    image: "/images/4.jpg",
     paneles: "Instalación de 2000 paneles solares",
     potencia: "Potencia de más de 3000 KWh/día",
     description:
@@ -53,7 +53,7 @@ const proyects: proyect[] = [
   {
     id: 5,
     name: "Lorem ipsum",
-    image: "/images/5.png",
+    image: "/images/5.jpg",
     paneles: "Instalación de 2000 paneles solares",
     potencia: "Potencia de más de 3000 KWh/día",
     description:
@@ -62,7 +62,7 @@ const proyects: proyect[] = [
   {
     id: 6,
     name: "Lorem ipsum",
-    image: "/images/5.png",
+    image: "/images/5.jpg",
     paneles: "Instalación de 2000 paneles solares",
     potencia: "Pontecia de más 3000 KWh/día",
     description:

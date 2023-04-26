@@ -30,8 +30,8 @@ const usData: misionData[] = [
     image: "1.png",
     icons: [
       { id: 1, image: "/images/solar1.png" },
-      { id: 1, image: "/images/solar2.png" },
-      { id: 1, image: "/images/solar3.png" },
+      { id: 2, image: "/images/solar2.png" },
+      { id: 3, image: "/images/solar3.png" },
     ],
   },
   {
@@ -42,8 +42,8 @@ const usData: misionData[] = [
     image: "1.png",
     icons: [
       { id: 1, image: "/images/solarRef1.png" },
-      { id: 1, image: "/images/solarRef2.png" },
-      { id: 1, image: "/images/solarRef3.png" },
+      { id: 2, image: "/images/solarRef2.png" },
+      { id: 3, image: "/images/solarRef3.png" },
     ],
   },
 ];
