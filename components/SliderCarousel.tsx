@@ -25,7 +25,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 2,
-    image: "/images/Slider2.png",
+    image: "/images/Slider4.png",
     leyend: [
       "Disminución en las emisiones de CO2 en 10 millones de mtrs3",
       "/images/co2.png",
@@ -34,7 +34,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 3,
-    image: "/images/Slider3.png",
+    image: "/images/Slider4.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
       "/images/panel.png",
