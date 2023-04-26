@@ -17,7 +17,7 @@ const proyects: proyect[] = [
   {
     id: 1,
     name: "Lorem ipsum",
-    image: "/images/1.png",
+    image: "/images/slider4.png",
     paneles: "Instalación de 2000 paneles solares",
     potencia: "3000 KWh/día",
     description:
