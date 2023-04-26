@@ -16,7 +16,7 @@ type carouselImageProps = {
 const carouselImages: carouselImageProps[] = [
   {
     id: 1,
-    image: "/images/slider1.png",
+    image: "/images/Slider1.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
       "/images/panel.png",
@@ -25,7 +25,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 2,
-    image: "/images/slider2.png",
+    image: "/images/Slider2.png",
     leyend: [
       "Disminución en las emisiones de CO2 en 10 millones de mtrs3",
       "/images/co2.png",
@@ -34,7 +34,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 3,
-    image: "/images/slider3.png",
+    image: "/images/Slider3.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
       "/images/panel.png",
