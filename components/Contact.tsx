@@ -1,21 +1,29 @@
-"use client";
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import styles from "../styles/Contact.module.css";
 import Image from "next/image";
 
-function Contact() {
-  const [formData, setFormData] = useState({
+interface FormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+function Contact(): JSX.Element {
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
 
-  const handleChange = (event) => {
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const response = await fetch("/api/sendEmail", {
       method: "POST",
@@ -27,7 +35,7 @@ function Contact() {
     if (response.ok) {
       // Redirigir al usuario a la página de confirmación o mostrar mensaje de éxito
     } else {
-      // Mostrar mensaje de error al usuarioo
+      // Mostrar mensaje de error al usuario
     }
   };
 
