@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import Proyects from "../../components/Proyects";
 import Partners from "../../components/Partners";
 import SliderCarousel from "../../components/SliderCarousel";
+import Whatsapp from "../../components/Whatsapp";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Partners />
       <Contact />
       <Footer />
+      <Whatsapp />
     </>
   );
 }
