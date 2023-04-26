@@ -25,7 +25,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 2,
-    image: "/images/Slider4.png",
+    image: "/images/Slider2.png",
     leyend: [
       "Disminución en las emisiones de CO2 en 10 millones de mtrs3",
       "/images/co2.png",
@@ -97,10 +97,11 @@ const SliderCarousel = () => {
             <div className={styles.leyendContainer}>
               <h2 className={styles.carouselLeyend}>{image.leyend[0]}</h2>
               <Image
+                className={styles.leyendIcon}
                 src={image.leyend[1]}
                 alt={`${image.id + 3}`}
-                width={150}
-                height={150}
+                width={100}
+                height={100}
               />
             </div>
           </div>
