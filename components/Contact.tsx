@@ -1,3 +1,4 @@
+"use client";
 import { useState, ChangeEvent, FormEvent } from "react";
 import styles from "../styles/Contact.module.css";
 import Image from "next/image";
