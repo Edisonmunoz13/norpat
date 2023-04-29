@@ -17,11 +17,11 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 5,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1,
+    items: 5,
   },
 };
 
@@ -37,12 +37,6 @@ const clients: clientProps[] = [
   { id: 4, image: "/images/nippon.png" },
   { id: 5, image: "/images/logistica.png" },
 ];
-
-let size = 1080 / clients.length;
-
-if (typeof window !== "undefined") {
-  let size: number = window.innerWidth / 8;
-}
 
 const OurClients = () => {
   return (

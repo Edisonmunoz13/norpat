@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React,  from "react";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
+import BurguerNav from "./BurguerNav";
 
 type section = {
   id: number;
@@ -19,7 +20,7 @@ const sections: section[] = [
   },
   {
     id: 3,
-    name: "Nuestros clientes",
+    name: "Confían en nosotros",
   },
   {
     id: 4,
@@ -27,6 +28,10 @@ const sections: section[] = [
   },
   {
     id: 5,
+    name: "Servicios",
+  },
+  {
+    id: 6,
     name: "Contacto",
   },
 ];
@@ -56,6 +61,7 @@ const Navbar = () => {
             </div>
           ))}
         </div>
+        {}
       </div>
     </div>
   );

@@ -9,8 +9,9 @@
 .section {
   cursor: pointer;
   color: #1797d5;
-  font-weight: normal;
+  font-weight: 400;
   font-family: Helvetica;
+  font-size: 14px;
 }
 
 .section:hover {
@@ -19,6 +20,8 @@
 }
 
 .image {
+  width: 60%;
+  height: auto;
   padding-right: 90px;
   cursor: pointer;
 }
@@ -41,4 +44,46 @@
   left: 0;
   top: 0;
   z-index: 999;
+}
+
+@media (max-width: 1550px) {
+  .navContainer {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .section {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navContainer {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .section {
+    font-size: 10px;
+  }
+
+  .image {
+    margin-bottom: -10px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navContainer {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .image {
+    padding-bottom: 5px;
+  }
 }
