@@ -1,8 +1,7 @@
 "use client";
-import React,  from "react";
+import React from "react";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
-import BurguerNav from "./BurguerNav";
 
 type section = {
   id: number;
