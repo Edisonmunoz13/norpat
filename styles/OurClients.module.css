@@ -8,14 +8,16 @@
 }
 
 .clientsList {
-  width: 100%;
+  width: 95%;
   margin: auto;
 }
 
 .logoItem {
-  width: 60%;
+  margin: auto;
+  width: 70%;
   height: auto;
-  padding-left: 15%;
+  padding-left: 10%;
+
   cursor: pointer;
 }
 
@@ -42,4 +44,16 @@
   margin: auto;
   width: 62%;
   height: 5px;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 22px;
+  }
 }

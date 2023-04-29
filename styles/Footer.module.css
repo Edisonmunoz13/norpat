@@ -16,11 +16,22 @@
 }
 
 .footerLogo {
-  width: auto;
+  width: 15%;
   height: auto;
 }
 
 .redesImage {
-  width: auto;
+  width: 100%;
   height: auto;
+}
+
+@media (max-width: 700px) {
+  .redesImage {
+    display: none;
+  }
+
+  .footerText {
+    width: 60%;
+    font-size: 8px;
+  }
 }

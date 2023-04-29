@@ -32,3 +32,23 @@
   font-weight: 200;
   color: #a1c7e0;
 }
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .question {
+    font-size: 12px;
+  }
+
+  .answer {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 22px;
+  }
+}

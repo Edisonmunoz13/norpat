@@ -137,29 +137,6 @@ const Nosotros = () => {
                   {professional.experiencie} <br />
                   {professional.matrícula}
                 </p>
-                <div className={styles.netContact}>
-                  <Image
-                    className={styles.netIcon}
-                    src={"/images/face.png"}
-                    alt="face"
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    className={styles.netIcon}
-                    src={"/images/in.png"}
-                    alt="in"
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    className={styles.netIcon}
-                    src={"/images/ig.png"}
-                    alt="ig"
-                    width={20}
-                    height={20}
-                  />
-                </div>
               </div>
             ))}
           </div>

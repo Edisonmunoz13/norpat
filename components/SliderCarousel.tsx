@@ -16,16 +16,16 @@ type carouselImageProps = {
 const carouselImages: carouselImageProps[] = [
   {
     id: 1,
-    image: "/images/slid112.png",
+    image: "/images/slrr1.png",
     leyend: [
       "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
-      "/images/panelorange.png",
+      "/images/panelwhite.png",
     ],
     styles: ["leyend1", "icon1"],
   },
   {
     id: 2,
-    image: "/images/Slider2.png",
+    image: "/images/slrr1.png",
     leyend: [
       "Disminución en las emisiones de CO2 en 10 millones de mtrs3, (editar no se de que manera se nota eso)",
       "/images/co2.png",
@@ -34,7 +34,7 @@ const carouselImages: carouselImageProps[] = [
   },
   {
     id: 3,
-    image: "/images/Slider3.0.png",
+    image: "/images/slrr1.png",
     leyend: [
       "Cantidad total de KWt generados: 400.000, producción mensual aproximada de: 10.000 (editar también)",
       "/images/production.png",
@@ -87,7 +87,7 @@ const SliderCarousel = () => {
         {carouselImages.map((image) => (
           <div key={image.id}>
             <Image
-              className={image.styles[1]}
+              className={styles.icon1}
               src={image.image}
               alt={`${image.id}`}
               width={1920}
@@ -99,7 +99,7 @@ const SliderCarousel = () => {
               <Image
                 className={styles.leyendIcon}
                 src={image.leyend[1]}
-                alt={`${image.id + 3}`}
+                alt={`${image.id}`}
                 width={100}
                 height={100}
               />

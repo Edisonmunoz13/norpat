@@ -2,20 +2,22 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Whatsapp.module.css";
 
 const Whatsapp = () => {
   return (
     <div
       style={{
         position: "fixed",
-        right: "20px",
-        bottom: "20px",
+        right: "-40px",
+        bottom: "25px",
         zIndex: "999",
       }}
     >
       <Link legacyBehavior href="https://wa.me/5492984665081">
         <a target="_blank" rel="noopener noreferrer">
           <Image
+            className={styles.image}
             src="/images/wha.png"
             alt="Conectarse por WhatsApp"
             width={70}
