@@ -34,16 +34,9 @@
 }
 
 @media (max-width: 1200px) {
-  .title {
-    font-size: 28px;
-  }
-
-  .question {
-    font-size: 12px;
-  }
-
-  .answer {
-    font-size: 11px;
+  .faqContainer {
+    width: 80%;
+    margin: auto;
   }
 }
 
