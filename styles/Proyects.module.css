@@ -70,8 +70,9 @@
 }
 
 @media (max-width: 1200px) {
-  .title {
-    font-size: 28px;
+  .containerContainer {
+    width: 82%;
+    margin: auto;
   }
 }
 

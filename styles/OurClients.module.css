@@ -47,8 +47,12 @@
 }
 
 @media (max-width: 1200px) {
-  .title {
-    font-size: 28px;
+  .carouselContainer {
+    width: 85%;
+    margin: auto;
+  }
+  .line {
+    width: 80%;
   }
 }
 
