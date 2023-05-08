@@ -119,26 +119,38 @@ const Nosotros = () => {
             Nuestro <br></br> equipo de Profesionales
           </h2>
         </div>
+
         <div className={styles.containerContainer}>
           <div className={styles.professionalContainer}>
-            {ourProfessionals.map((professional) => (
-              <div key={professional.id} className={styles.professionalCard}>
-                <Image
-                  className={styles.professionalImage}
-                  src={professional.image}
-                  alt="nico"
-                  width={250}
-                  height={200}
-                />
-                <h3 className={styles.name}>{professional.name}</h3>
-                <h4 className={styles.position}> {professional.info} </h4>
-                <p className={styles.info}>
-                  {professional.expert} <br />
-                  {professional.experiencie} <br />
-                  {professional.matrícula}
-                </p>
-              </div>
-            ))}
+            <div className={styles.professionalCardContainer}>
+              {ourProfessionals.map((professional) => (
+                <div key={professional.id} className={styles.professionalCard}>
+                  <Image
+                    className={styles.professionalImage}
+                    src={professional.image}
+                    alt="nico"
+                    width={250}
+                    height={200}
+                  />
+                  <h3 className={styles.name}>{professional.name}</h3>
+                  <h4 className={styles.position}> {professional.info} </h4>
+                  <p className={styles.info}>
+                    {professional.expert} <br />
+                    {professional.experiencie} <br />
+                    {professional.matrícula}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className={styles.team}>
+              <Image
+                className={styles.teamImage}
+                src={"/images/Team.png"}
+                alt="team"
+                width={600}
+                height={300}
+              />
+            </div>
           </div>
         </div>
       </div>
