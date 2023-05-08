@@ -23,7 +23,6 @@ export default function Home() {
       <Proyects />
       <Faq />
       <OurClients />
-      <Partners />
       <Contact />
       <Footer />
       <Whatsapp />

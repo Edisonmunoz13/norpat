@@ -73,7 +73,7 @@ const Faq = () => {
   };
   return (
     <div>
-      <div>
+      <div className={styles.container}>
         <h1 className={styles.title}>Preguntas Frecuentes</h1>
         <div className={styles.faqContainer}>
           {faqs.map(({ question, answer }, index) => (
@@ -88,7 +88,7 @@ const Faq = () => {
               {activeIndex === index && (
                 <p className={styles.answer}>{answer}</p>
               )}
-              <div className={styles.line}></div>
+              {index !== faqs.length - 1 && <div className={styles.line}></div>}
             </div>
           ))}
         </div>
