@@ -23,11 +23,11 @@ const sections: section[] = [
   },
   {
     id: 4,
-    name: "Confían en nosotros",
+    name: "Preguntas Frecuentes",
   },
   {
     id: 5,
-    name: "Preguntas frecuentes",
+    name: "Confían en Nosotros",
   },
   {
     id: 6,

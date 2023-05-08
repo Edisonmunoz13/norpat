@@ -9,6 +9,7 @@ import Partners from "../../components/Partners";
 import SliderCarousel from "../../components/SliderCarousel";
 import Whatsapp from "../../components/Whatsapp";
 import Faq from "../../components/Faq";
+import Services from "../../components/Services";
 
 export default function Home() {
   return (
@@ -18,9 +19,10 @@ export default function Home() {
       </div>
       <SliderCarousel />
       <Nosotros />
+      <Services />
       <Proyects />
-      <OurClients />
       <Faq />
+      <OurClients />
       <Partners />
       <Contact />
       <Footer />
