@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import styles from "../styles/Faq.module.css";
+import { useState } from "react";
 
 type FaqProps = {
   question: string;
@@ -60,15 +62,33 @@ const faqs: FaqProps[] = [
 ];
 
 const Faq = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    if (activeIndex === index) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+    }
+  };
   return (
     <div>
-      <div>
+      <div className={styles.container}>
         <h1 className={styles.title}>Preguntas Frecuentes</h1>
         <div className={styles.faqContainer}>
           {faqs.map(({ question, answer }, index) => (
             <div className={styles.faqItem} key={index}>
-              <h3 className={styles.question}>{question}</h3>
-              <p className={styles.answer}>{answer}</p>
+              <h3
+                className={styles.question}
+                onClick={() => handleClick(index)}
+              >
+                {question}
+              </h3>
+
+              {activeIndex === index && (
+                <p className={styles.answer}>{answer}</p>
+              )}
+              {index !== faqs.length - 1 && <div className={styles.line}></div>}
             </div>
           ))}
         </div>
