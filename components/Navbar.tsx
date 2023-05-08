@@ -15,19 +15,19 @@ const sections: section[] = [
   },
   {
     id: 2,
-    name: "Proyectos",
+    name: "Servicios",
   },
   {
     id: 3,
-    name: "Confían en nosotros",
+    name: "Proyectos",
   },
   {
     id: 4,
-    name: "Preguntas frecuentes",
+    name: "Confían en nosotros",
   },
   {
     id: 5,
-    name: "Servicios",
+    name: "Preguntas frecuentes",
   },
   {
     id: 6,

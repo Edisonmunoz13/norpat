@@ -16,28 +16,22 @@ type carouselImageProps = {
 const carouselImages: carouselImageProps[] = [
   {
     id: 1,
-    image: "/images/slrr1.png",
-    leyend: [
-      "Instalación más grande de Argentina con más de 2000 paneles y una potencia de 3000 KWt",
-      "/images/panelwhite.png",
-    ],
+    image: "/images/first.png",
+    leyend: ["+2000 Paneles Solares Instalados", "/images/panelwhite1.png"],
     styles: ["leyend1", "icon1"],
   },
   {
     id: 2,
-    image: "/images/slrr1.png",
-    leyend: [
-      "Disminución en las emisiones de CO2 en 10 millones de mtrs3, (editar no se de que manera se nota eso)",
-      "/images/co2.png",
-    ],
+    image: "/images/second.png",
+    leyend: [" +800 kWp de Potencia Instalada", "/images/arrowwhite.png"],
     styles: ["leyend2", "icon2"],
   },
   {
     id: 3,
-    image: "/images/slrr1.png",
+    image: "/images/third.png",
     leyend: [
-      "Cantidad total de KWt generados: 400.000, producción mensual aproximada de: 10.000 (editar también)",
-      "/images/production.png",
+      "+700.000 kWh de Energía Eléctrica generada a partir de Energías Renovables",
+      "/images/productionwhite.png",
     ],
     styles: ["leyend3", "icon3"],
   },
