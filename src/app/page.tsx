@@ -5,7 +5,6 @@ import OurClients from "../../components/OurClients";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import Proyects from "../../components/Proyects";
-import Partners from "../../components/Partners";
 import SliderCarousel from "../../components/SliderCarousel";
 import Whatsapp from "../../components/Whatsapp";
 import Faq from "../../components/Faq";
