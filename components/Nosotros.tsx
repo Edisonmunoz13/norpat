@@ -51,7 +51,7 @@ const usData: misionData[] = [
 const ourProfessionals: professionalProps[] = [
   {
     id: 1,
-    image: "/images/ing.jpg",
+    image: "/images/Nico2.png",
     name: "NICOLAS GORSKY",
     info: "Ingeniero Mecánico Electricista",
     expert: "Experto Universitario en Diseño de Plantas Fotovoltáicas",
@@ -61,7 +61,7 @@ const ourProfessionals: professionalProps[] = [
   },
   {
     id: 2,
-    image: "/images/ing.jpg",
+    image: "/images/Teo.png",
     name: "MATEO GADANO",
     info: "Ingeniero Ambiental",
     expert: "Experto Universitario en Diseño de Plantas Fotovoltáicas",
@@ -71,7 +71,7 @@ const ourProfessionals: professionalProps[] = [
   },
   {
     id: 3,
-    image: "/images/ing.jpg",
+    image: "/images/Gaston.png",
     name: "GASTON GAGLIARDI",
     info: "Ingeniero Mecánico",
     expert: "Certificado en administración de Proyectos",
