@@ -14,7 +14,7 @@ const Whatsapp = () => {
         zIndex: "999",
       }}
     >
-      <Link legacyBehavior href="https://wa.me/5492984665081">
+      <Link legacyBehavior href="https://wa.me/573105709217">
         <a target="_blank" rel="noopener noreferrer">
           <Image
             className={styles.image}
